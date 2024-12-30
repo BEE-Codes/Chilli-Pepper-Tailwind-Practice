@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  href="./output.css">
-    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bonheur+Royale&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Bonheur+Royale&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/124c3d963d.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="bg-black text-white font-serif sm:bg-slate-100">
+<body class="bg-black text-white font-sans">
     <header class="w-full h-15  flex justify-between items-center px-6">
         <div class="text-2xl">
             <h1 class="font-bold">CHILLE</h1>
@@ -16,14 +18,14 @@
         </div>
 
         <div class="">
-            <ul class="flex items-center gap-[3rem] whitespace-nowrap font-semibold" >
-                <li> <a href="" target="_blank"> Home</a> </li> 
-                <li> <a href="" target="_blank">Menu</a> </li> 
-                <li> <a href="" target="_blank"> Services </a> </li> 
+            <ul class="flex items-center gap-[3rem] whitespace-nowrap font-semibold">
+                <li> <a href="" target="_blank"> Home</a> </li>
+                <li> <a href="" target="_blank">Menu</a> </li>
+                <li> <a href="" target="_blank"> Services </a> </li>
                 <li> <a href="" target="_blank"> About Us </a> </li>
                 <li> <a href="" target="_blank">Contact</a> </li>
-                <!-- <li> <i></i> </li>
-                <li></li> -->
+                <!-- <li> <a href=""> <i class="fa-solid fa-magnifying-glass"> <i/> </a> </li>
+                <li> <a href=""> <i class="fa-solid fa-cart-shopping"> </i> </a> </li> -->
                 <li><a href="">Login</a> </li>
             </ul>
         </div>
@@ -37,9 +39,9 @@
         <h1 class="font-bonheur font-thin text-8xl px-6"> <span class="text-red-700">Spicy</span> Burger</h1>
 
         <div class="flex gap-[3rem] px-20 pt-7">
-            <div class="words w-[45%]"> 
+            <div class="words w-[45%]">
 
-                <p class="text-3xl font-medium leading-loose">The perfect combination of heat and savory goodness.
+                <p class="text-3xl font-medium leading-relaxed">The perfect combination of heat and savory goodness.
                     A spicy burger packs bold flavors that can satisfy any craving for hot and delicious.
                 </p>
                 <p class="text-xl font-light pt-14">
@@ -50,80 +52,194 @@
                 <img src="./Images/drippingburger.jpg" alt="">
             </div>
         </div>
-        <button class="bg-red-700 rounded-full px-6 py-4 font-light text-md"> <a href="#" target="blank">Order Now</a> </button>
+        <button class="bg-red-700 ml-44 rounded-full w-[15%] py-3 text-2xl font-bold "> <a href="#" target="blank">Order
+                Now</a> </button>
     </section>
-    <!-- for rebuilding css npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch-->
+    <!-- for rebuilding css npx tailwindcss -i ./src/input.css -o ./src/output.css --watch -->
     <section>
-        <div class="flex justify-center py-8"> 
-            <h5 class="text-2xl font-bold">Food Menu</h5>
-        </div>
-        <div class="flex justify-center gap-[6rem]">
-            <div class="border border-red-600"> <img src="./Images/pexels-sohanikamat-8284645.jpg" alt=""> </div>
-            <div class=" bg-orange-500 border border-red-600 rounded-md">
-                <h1 class="font-bonheur font-thin text-6xl">Fried <span class="text-red-700"> Chicken </span> Legs</h1>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Recusandae tenetur sed aspernatur nisi inventore ex ad. 
-                    Ducimus, pariatur similique minima modi rem quibusdam, 
-                    sit minus omnis provident dolorum ullam in.
-                </p>
-                <div>
-                    <p>$3.20</p>
-                    <button> <a href=""> Add to cart </a> </button>
-                </div>
-            </div>
+        <div class="flex justify-center mt-20 mb-20">
+            <h5 class="text-3xl font-bold">Food Menu</h5>
         </div>
 
-        <div class="flex justify-center gap-[6rem]">
-            <div class=" bg-orange-500 border border-red-600 rounded-md">
-                <h1 class="font-bonheur font-thin text-6xl">Hot & <span class="text-red-700"> Spicy </span> Pizza</h1>
-                <p>
+
+        <div class="flex justify-center gap-[4rem] mb-32">
+            <div class="border-2 border-red-700 rounded-3xl w-[25%] h-96 flex justify-center">
+                <img src="./Images/delicious-chicken-legs-removebg-preview.png" alt="" class="w-72 h-64 mt-20">
+            </div>
+            <div class="border-2 border-red-700 rounded-3xl w-[60%]">
+                <h1 class="font-bonheur text-6xl ml-10 mt-16 mb-3 font-medium">Fried <span class="text-red-700"> Chicken
+                    </span> Legs</h1>
+                <p class="ml-20 w-[80%] mb-10">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Recusandae tenetur sed aspernatur nisi inventore ex ad.
                     Ducimus, pariatur similique minima modi rem quibusdam,
                     sit minus omnis provident dolorum ullam in.
                 </p>
-                <div>
-                    <p>$3.20</p>
-                    <button> <a href=""> Add to cart </a> </button>
+                <div class="flex ml-20 gap-[4rem] items-center">
+                    <p class="font-medium"> $3.20</p>
+                    <button class="bg-red-700 rounded-full px-14 py-3 font-medium"> <a href=""> Add to cart </a>
+                    </button>
                 </div>
             </div>
-            <div class="border border-red-600"> <img src="./Images/pexels-miyatavictor-3682837.jpg" alt=""> </div>
         </div>
 
-        <div class="flex justify-center gap-[6rem]">
-            <div class="border border-red-600"> <img src="./Images/pexels-ufukiseloglu-27744717.jpg" alt=""> </div>
-            <div class=" bg-orange-500 border border-red-600 rounded-md">
-                <h1 class="font-bonheur font-thin text-6xl">Turkish <span class="text-red-700"> Kebab </span> </h1>
-                <p>
+
+        <div class="flex justify-center gap-[4rem] mb-32">
+            <div class="border-2 border-red-700 rounded-3xl w-[60%]">
+                <h1 class="font-bonheur text-6xl ml-10 mt-16 mb-3 font-medium">Hot & <span class="text-red-700"> Spicy
+                    </span> Pizza</h1>
+                <p class="ml-20 w-[80%] mb-10">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Recusandae tenetur sed aspernatur nisi inventore ex ad.
                     Ducimus, pariatur similique minima modi rem quibusdam,
                     sit minus omnis provident dolorum ullam in.
                 </p>
-                <div>
-                    <p>$3.20</p>
-                    <button> <a href=""> Add to cart </a> </button>
+                <div class="flex ml-20 gap-[4rem] items-center">
+                    <p class="font-medium">$3.20</p>
+                    <button class="bg-red-700 rounded-full px-14 py-3 font-medium"> <a href=""> Add to cart </a>
+                    </button>
                 </div>
+            </div>
+            <div class="border-2 border-red-700 rounded-3xl w-[25%] h-96 flex justify-center">
+                <img src="./Images/large-mixed-pizza-with-meat.png" alt="" class="w-72 h-64 mt-20">
             </div>
         </div>
 
-        <div class="flex justify-center gap-[6rem]">
-            <div class=" bg-orange-500 border border-red-600 rounded-md">
-                <h1 class="font-bonheur font-thin text-6xl">French <span class="text-red-700"> Fries </span> </h1>
-                <p>
+
+        <div class="flex justify-center gap-[4rem] mb-32">
+            <div class="border-2 border-red-700 rounded-3xl w-[25%] h-96 flex justify-center">
+                <img src="./Images/side-view-shawarma-with-fried-potatoes-board-cookware.png" alt=""
+                    class="w-72 h-64 mt-20">
+            </div>
+            <div class="border-2 border-red-700 rounded-3xl w-[60%]">
+                <h1 class="font-bonheur text-6xl ml-10 mt-16 mb-3 font-medium">Turkish <span class="text-red-700"> Kebab
+                    </span> </h1>
+                <p class="ml-20 w-[80%] mb-10">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Recusandae tenetur sed aspernatur nisi inventore ex ad.
                     Ducimus, pariatur similique minima modi rem quibusdam,
                     sit minus omnis provident dolorum ullam in.
                 </p>
-                <div>
-                    <p>$3.20</p>
-                    <button> <a href=""> Add to cart </a> </button>
+                <div class="flex ml-20 gap-[4rem] items-center">
+                    <p class="font-medium">$3.20</p>
+                    <button class="bg-red-700 rounded-full px-14 py-3 font-medium"> <a href=""> Add to cart </a>
+                    </button>
                 </div>
             </div>
-            <div class="border border-red-600 "> <img src="./Images/top-view-fish-chips-paper-cone-with-beer.jpg" alt="" class="max-w-full max-h-64"> </div>
+        </div>
+
+
+        <div class="flex justify-center gap-[4rem] mb-32">
+            <div class="border-2 border-red-700 rounded-3xl w-[60%]">
+                <h1 class="font-bonheur text-6xl ml-10 mt-16 mb-3 font-medium">French <span class="text-red-700"> Fries
+                    </span> </h1>
+                <p class="ml-20 w-[80%] mb-10">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae tenetur sed aspernatur nisi inventore ex ad.
+                    Ducimus, pariatur similique minima modi rem quibusdam,
+                    sit minus omnis provident dolorum ullam in.
+                </p>
+                <div class="flex ml-20 gap-[4rem] items-center">
+                    <p class="font-medium">$3.20</p>
+                    <button class="bg-red-700 rounded-full px-14 py-3 font-medium"> <a href=""> Add to cart </a>
+                    </button>
+                </div>
+            </div>
+            <div class="border-2 border-red-700 rounded-3xl w-[25%] h-96 flex justify-center">
+                <img src="./Images/front-view-tasty-ham-sandwiches-with-french-fries-dark-surface.png" alt=""
+                    class="w-72 h-64 mt-20">
+            </div>
+        </div>
+
+        <div class="w-[15%] h-12 border-2 border-red-700 rounded-lg ml-[40%] flex justify-evenly items-center">
+            <p class=""> Browse Full Menu </p>
+            <i class="fa-solid fa-arrow-right"></i> 
         </div>
     </section>
+
+    <section>
+        <div class="flex justify-center mt-20 mb-20">
+            <h5 class="font-light text-6xl"> What <span class="text-red-700">we</span> Serve</h5>
+        </div>
+        <div class="flex justify-evenly">
+            <div class="w-[15%]">
+                <div class="border-2 border-red-700 rounded-3xl"> <img src="./Images/rb_2148588601.png" alt=""> </div>
+                <h6 class="text-center pt-6 pb-6 font-bold text-xl" >Dine-In Service </h6>
+                <p class="pb-24">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Modi animi ipsam tempore reiciendis 
+                </p>
+            </div> 
+
+            <div  class="w-[15%]">
+                <div class="border-2 border-red-700 rounded-3xl"> <img src="./Images/rb_2148498576.png" alt=""> </div>
+                <h6 class="text-center pt-6 pb-6 font-bold text-xl"> Delivery Service </h6>
+                <p class="pb-24">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Modi animi ipsam tempore reiciendis            
+                </p>
+            </div>
+
+            <div  class="w-[15%]">
+                <div class="border-2 border-red-700 rounded-3xl"> <img src="./Images/rb_2148663400.png" alt=""> </div>
+                <h6 class="text-center pt-6 pb-6 font-bold text-xl">Drive-Thru Service </h6>
+                <p class="pb-24">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    Modi animi ipsam tempore reiciendis
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-[url('./Images/peppers.jpg')] bg-cover bg-center bg-no-repeat w-full h-[700px] ">
+        <h1 class="pt-10 pb-11 text-4xl font-bold ml-14">About <span class="text-red-700">Us</span></h1>
+        <p class="ml-20 w-[85%] text-2xl mb-32">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Corporis obcaecati possimus sunt maxime ipsam velit nulla quasi quia eveniet aspernatur?
+            Minima optio nemo illum numquam odit culpa assumenda quos magnam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Corporis obcaecati possimus sunt maxime ipsam velit nulla quasi quia eveniet aspernatur?
+            Minima optio nemo illum numquam odit culpa assumenda quos magnam?
+        </p>
+        <div class="bg-red-700 bg-opacity-50 flex justify-center items-center gap-[4rem] h-[288px]">
+            <div class="text-2xl">
+                <h1 class="font-bold">CHILLE</h1>
+                <h3 class="font-normal font-mono">PEPPER</h3>
+            </div>
+            <div>
+                <ul>
+                    <li> <a href=""> About Chillie Pepper </a> </li>
+                    <li> <a href=""> Careers </a> </li>
+                    <li> <a href=""> Chillie pepper Care </a> </li>
+                    <li> <a href=""> Responsible Disclosure </a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <a href=""> Legal </a> </li>
+                    <li> <a href=""> Terms And Conditions </a> </li>
+                    <li> <a href=""> Privacy Policy </a> </li>
+                    <li> <a href=""> Disclaimer </a> </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li> <a href=""> support </a> </li>
+                    <li> <a href=""> Get Help </a> </li>
+                    <li> <a href=""> Contact Us </a> </li>
+                    <li> <a href=""> Feedback </a> </li>
+                </ul>
+            </div>
+            <div>
+                <h1 class="text-2xl text-center">Download App</h1>
+                <img src="./Images/PngItem_1144050.png" alt="" class="w-[500px] mt-8">
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p class="p-8 text-center"> All Rights Reserved. Copyright &copy; FoodWorks Ltd.</p>
+    </footer>
 </body>
-</html>
+

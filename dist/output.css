@@ -558,12 +558,20 @@ video {
   display: flex;
 }
 
+.max-h-64 {
+  max-height: 16rem;
+}
+
 .w-\[45\%\] {
   width: 45%;
 }
 
 .w-full {
   width: 100%;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .items-center {
@@ -592,6 +600,10 @@ video {
 
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
 }
 
 .border {
@@ -634,11 +646,6 @@ video {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 .px-6 {
